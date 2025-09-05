@@ -1,0 +1,24 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main(){string fn, cys, bd, mt;
+ cout << "Input Full name:";
+ getline(cin,fn);
+
+ cout<< "Input Course, School Year & Section:";
+getline(cin,cys);
+
+cout << "Input Birthday:";
+getline(cin, bd);
+
+cout<<"Input your Motto in life:";
+getline(cin,mt);
+
+cout<<"\nHi! I'm" << fn << "of" << cys <<","<<endl;
+cout<<"Welcome to Data Structures and Algorithm!"<<endl;
+cout<<"My Birthday is on" << " " << bd<<","<<endl;
+cout<<"And my motto in life is"<< mt<<endl;
+
+    return 0;
+}
