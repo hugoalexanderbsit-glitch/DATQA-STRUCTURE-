@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int hs, mn, tms;
+
+    cout<< "Input Hours:";
+    cin>> hs;
+
+    cout<< "Input Minutes:";
+    cin>> mn;
+
+
+    tms = (hs*60)+mn;
+
+
+    cout << "Total:" << tms << " " << "minutes" << endl;
+
+    return 0;
+}
