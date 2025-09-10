@@ -1,0 +1,45 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    // For loop: print the first 10 even numbers
+    cout << "For loop (first 10 even numbers): ";
+    for (int huh = 2;  huh<= 20; huh += 2) {
+        cout << huh << " ";
+    }
+    cout << endl;
+
+    // While loop: ask for password until correct
+    cout << "\nWhile loop (password check):" << endl;
+    string password;
+    cout << "Enter password: ";
+    cin >> password;
+
+    while (password != "1234") {
+        cout << "Wrong! Try again: ";
+        cin >> password;
+    }
+    cout << "Access granted!" << endl;
+
+    // Do-While loop: simple menu system
+    int choice;
+    do {
+        cout << "\nDo-While loop (menu):" << endl;
+        cout << "1. Say Hello\n2. Say Goodbye\n3. Exit" << endl;
+        cout << "Enter your choice: ";
+        cin >> choice;
+
+        if (choice == 1) {
+            cout << "Hello there!" << endl;
+        } else if (choice == 2) {
+            cout << "Goodbye!" << endl;
+        } else if (choice != 3) {
+            cout << "Invalid choice!" << endl;
+        }
+    } while (choice != 3);
+
+    cout << "Program ended." << endl;
+    return 0;
+}
